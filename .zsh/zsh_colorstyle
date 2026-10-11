@@ -1,0 +1,24 @@
+# Load VCS info
+autoload -Uz vcs_info
+
+# Define precmd to update vcs_info and RAM usage
+precmd() {
+  vcs_info
+}
+
+# Format vcs_info variable
+zstyle ':vcs_info:git:*' formats ':%F{green}%b%f'
+
+# Enable prompt substitution
+setopt PROMPT_SUBST
+
+# Define the prompt
+PROMPT='%F{magenta}%T%f %F{white}%1~%f${vcs_info_msg_0_} > '
+
+# Export settings
+export CLICOLOR=1
+#export LSCOLORS=ExFxBxDxCxegedabagacad
+#export DISPLAY=localhost:0.0
+
+# Alias for colored ls
+alias ls="ls --color=auto"

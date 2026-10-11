@@ -1,0 +1,14 @@
+## JUMP DIR
+alias gos="cd /path/to/some/dir"
+
+## MOUNT A REMOTE DIRECTORY (enter the password when prompted; never store it here)
+#alias mountremote="sshfs -o allow_other user@host.example.com:/remote/path /mnt/remote/"
+
+## SSH PORT-FORWARD EXAMPLES
+#alias pvserver="ssh -L 11111:remote.host:11111 remote"
+
+## PYTHON VIRTUAL ENVIRONMENT SHORTCUTS
+#alias myenv="source $HOME/pythonenvs/myenv/bin/activate"
+
+## RUST ENVIRONMENT
+#alias startrust="source $HOME/.cargo/env"
